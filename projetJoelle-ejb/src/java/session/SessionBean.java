@@ -501,7 +501,7 @@ public class SessionBean {
     }
     
     /**
-     * retourne la liste des étudiants inscrit
+     * retourne la liste des élèves inscrit
      * @return 
      */
     public List<Student> listEleveInscrit(){
