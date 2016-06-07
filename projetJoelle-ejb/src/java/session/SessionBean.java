@@ -501,6 +501,41 @@ public class SessionBean {
     }
     
     /**
+     * retourne la liste des étudiants inscrit
+     * @return 
+     */
+    public List<Student> listEleveInscrit(){
+        String requeteString = "SELECT * FROM student where identification_number=1;";
+        Query requete = em.createNativeQuery(requeteString, Student.class);
+        return (List<Student>) requete.getResultList();
+    }
+    
+    /**
+     * retourne la liste des élèves inscrit dans une salle de classe
+     * @param nomClasse
+     * @param nomOption
+     * @return 
+     */
+    public List<Student> listEleveInscritDansClasse(String nomClasse, String nomOption){
+        OptionAndClassePK cleSalleClasse = new OptionAndClassePK(nomOption, nomClasse);//represente la clé de la sale de classe
+        OptionAndClasse salleDeClasse = em.find(OptionAndClasse.class, cleSalleClasse);
+        if (salleDeClasse == null) {//cette salle de classe es inexistante
+            System.out.println("cette salle de classe es inexistante");
+            return null;
+        } else {//la classe existe
+            List<Student> listEleve = salleDeClasse.getStudentList();
+            List<Student> listEleveInscrit = new ArrayList<>();
+            
+            for(Student eleve : listEleve){
+                if(eleve.getIdentificationNumber()==1){
+                    listEleveInscrit.add(eleve);
+                }
+            }
+                
+            return listEleveInscrit;
+        }
+    }
+    /**
      * 
      * @return la liste des salles de classe
      */

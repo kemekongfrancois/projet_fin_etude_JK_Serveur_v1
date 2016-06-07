@@ -160,7 +160,7 @@ public class WebServiceJoelle {
         resultat += "\n**** creer ancien eleve1= " + creerAncienEleve("motouommaeliz@gmail.com", "6", "Mécanique Automobile", "MOTOUOM", "Maeliz", "25/12/2016", "0000", "d:");
         resultat += "\n**** creer ancien eleve2= " + creerAncienEleve("kengnenelly@gmail.com", "2nde", "Industrie d'habillement", "KENGNE", "Nelly", "08/05/1994", "0000", "d:");
         resultat += "\n**** creer ancien eleve= " + creerAncienEleve("mekamchristelle@gmail.com", "6", "Génie-civil Bâtiment", "WAFFO", "Chris", "22/11/2013", "0000", "d:");
-        resultat += "\n**** creer ancien eleve1= " + creerAncienEleve("motouomcatherine@gmail.com", "6", "Mécanique Automobile", "MOTOUOM", "Cathérine", "25/12/2016", "0000", "d:");
+        resultat += "\n**** creer ancien eleve1= " + creerAncienEleve("moootouomcatherine@gmail.com", "6", "Mécanique Automobile", "MOOOTOUOM", "Cathérine", "25/12/2016", "0000", "d:");
         resultat += "\n**** creer ancien eleve2= " + creerAncienEleve("kengnegaelle@gmail.com", "2nde", "Industrie d'habillement", "KENGNE", "Gaelle", "08/05/1994", "0000", "d:");
         resultat += "\n**** creer ancien eleve= " + creerAncienEleve("guedemnadege@gmail.com", "6", "Génie-civil Bâtiment", "GUEDEM", "Nadège", "22/11/2013", "0000", "d:");
         resultat += "\n**** creer ancien eleve1= " + creerAncienEleve("mekammarie@gmail.com", "6", "Mécanique Automobile", "MEKAM", "Marie", "25/12/2016", "0000", "d:");
@@ -296,5 +296,13 @@ public class WebServiceJoelle {
      
      public int nombrePlaceRestanteSalleClasse(String nomClasse, String nomOption){
          return sessionBean.nombrePlaceRestanteSalleClasse(nomClasse, nomOption);
+     }
+     
+     public List<Student> listEleveInscrit(){
+         return sessionBean.listEleveInscrit();
+     }
+     
+     public List<Student> listEleveInscritDansClasse(String nomClasse, String nomOption){
+         return sessionBean.listEleveInscritDansClasse(nomClasse, nomOption);
      }
 }
