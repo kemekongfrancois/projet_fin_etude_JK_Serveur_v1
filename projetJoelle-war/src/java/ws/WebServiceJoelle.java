@@ -151,10 +151,10 @@ public class WebServiceJoelle {
         resultat += "\n**** creer nouveau eleve2= " + creerNewEleve("teguealex@gmail.com", "P", "Mécanique Automobile", "TEGUE", "Alex", "27/09/2016", "0000", "d:", "c:");
         resultat += "\n**** creer nouveau eleve3= " + creerNewEleve("mintedemajoyce@gmail.com", "2nde", "Comptabilité et gestion", "MINTEDEMA", "Joyce", "11/02/2006", "0000", "d:", "c:");
         resultat += "\n**** creer nouveau eleve3= " + creerNewEleve("deffoquicelle@gmail.com", "5", "Menuiserie ébénisterie", "DEFFO", "Quicelle", "16/12/2014", "0000", "d:", "c:");
-        resultat += "\n**** creer nouveau eleve= " + creerNewEleve("dzuchejoelle@gmail.com", "Tle", "Fabrication mécanique", "DZUCHE", "Joelle", "06/05/1992", "0000", "d:", "c:");
-        resultat += "\n**** creer nouveau eleve2= " + creerNewEleve("kemekongyann@gmail.com", "P", "Mécanique Automobile", "KEMEKONG", "Yann", "27/09/2016", "0000", "d:", "c:");
-        resultat += "\n**** creer nouveau eleve3= " + creerNewEleve("defoange@gmail.com", "2nde", "Comptabilité et gestion", "DEFO", "Ange", "11/02/2006", "0000", "d:", "c:");
-        resultat += "\n**** creer nouveau eleve3= " + creerNewEleve("kenfackvanessa@gmail.com", "5", "Menuiserie ébénisterie", "KENFACK", "Vanessa", "16/12/2014", "0000", "d:", "c:");
+        resultat += "\n**** creer nouveau eleve= " + creerNewEleve("2dzuchejoelle@gmail.com", "Tle", "Fabrication mécanique", "2DZUCHE", "2Joelle", "06/05/1992", "0000", "d:", "c:");
+        resultat += "\n**** creer nouveau eleve2= " + creerNewEleve("2kemekongyann@gmail.com", "P", "Mécanique Automobile", "2KEMEKONG", "2Yann", "27/09/2016", "0000", "d:", "c:");
+        resultat += "\n**** creer nouveau eleve3= " + creerNewEleve("2defoange@gmail.com", "2nde", "Comptabilité et gestion", "2DEFO", "2Ange", "11/02/2006", "0000", "d:", "c:");
+        resultat += "\n**** creer nouveau eleve3= " + creerNewEleve("2kenfackvanessa@gmail.com", "5", "Menuiserie ébénisterie", "2KENFACK", "2Vanessa", "16/12/2014", "0000", "d:", "c:");
 
         resultat += "\n**** creer ancien eleve= " + creerAncienEleve("waffochris@gmail.com", "6", "Génie-civil Bâtiment", "WAFFO", "Chris", "22/11/2013", "0000", "d:");
         resultat += "\n**** creer ancien eleve1= " + creerAncienEleve("motouommaeliz@gmail.com", "6", "Mécanique Automobile", "MOTOUOM", "Maeliz", "25/12/2016", "0000", "d:");
